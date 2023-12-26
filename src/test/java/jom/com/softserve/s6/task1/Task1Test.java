@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Task1Test {
 
     final private static String PACKAGE = "jom.com.softserve.s6.task1.";
-/*
+
     @DisplayName("Check that Classes is present")
     @ParameterizedTest
     @MethodSource("listOfClasses")
@@ -73,5 +73,5 @@ public class Task1Test {
     private static Stream<Arguments> listOfYearsFalse() {
         return Stream.of(Arguments.of(1974), Arguments.of(1990));
     }
-    */
+
 }
