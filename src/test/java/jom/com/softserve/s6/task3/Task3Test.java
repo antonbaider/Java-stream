@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Task3Test {
 
     final private static String PACKAGE = "jom.com.softserve.s6.task3.";
-/*
+
     @DisplayName("Check that Classes is present")
     @ParameterizedTest
     @MethodSource("listOfClasses")
@@ -83,5 +83,5 @@ public class Task3Test {
                         "1010111010011001011111000111010001000001100110110111111100100001010111010011001011110011111" +
                         "010001000001100011110000111100111100101010000001000110110011"));
     }
-    */
+
 }
