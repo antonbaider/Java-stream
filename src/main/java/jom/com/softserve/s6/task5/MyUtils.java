@@ -10,6 +10,13 @@ public class MyUtils {
             throw new NullPointerException("Map cannot be null");
         }
 
-        return map.values().stream().filter(s -> s != null).flatMap(s -> s).filter(participant -> participant != null && !participant.trim().isEmpty()).map(String::trim).map(name -> Stream.of(name.split("\\s+")).map(word -> word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase()).reduce((first, second) -> first + "" + second).orElse("")).map(s -> s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase()).distinct().sorted();
+        return map.values().stream()
+                .filter(s -> s != null)
+                .flatMap(s -> s.map(participant -> participant != null ? participant.trim() : "")
+                        .filter(name -> !name.isEmpty())
+                        .map(name -> name.replaceAll("\\s+", ""))
+                        .map(name -> name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase()))
+                .distinct()
+                .sorted();
     }
 }
