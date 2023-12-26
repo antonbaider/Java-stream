@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Task2Test {
 
     final private static String PACKAGE = "jom.com.softserve.s6.task2.";
-/*
+
 
     @DisplayName("Check that Classes is present")
     @ParameterizedTest
@@ -68,6 +68,5 @@ public class Task2Test {
         return Stream.of(Arguments.of(3, 18, 27), Arguments.of(-2, 5, 18), Arguments.of(8, 0, 24),
                 Arguments.of(2, -37, 9), Arguments.of(0, 0, 0));
     }
-*/
 
 }

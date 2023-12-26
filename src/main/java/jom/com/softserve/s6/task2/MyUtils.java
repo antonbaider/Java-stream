@@ -1,12 +1,13 @@
 package jom.com.softserve.s6.task2;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
+import java.time.Period;
 
-public class MyUtils {
+class MyUtils {
     public static String getDateAfterToday(int years, int months, int days) {
-        //Write code there
-        return "";
+        LocalDate currentDate = LocalDate.now();
+        LocalDate futureDate = currentDate.plus(Period.of(years, months, days));
+        return futureDate.toString();
     }
 }
+
